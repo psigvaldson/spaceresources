@@ -1,0 +1,620 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.header {
+    padding-top: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.main-screen {
+    position: relative;
+    margin-bottom: 60%;
+}
+
+.earth-gif {
+    background-image: url("../img/Earth-video-gif.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+
+.main-search {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 75px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+#input-search {
+    width: 75%;
+    margin-left: 2%;
+    font-size: 2em;
+    background: transparent;
+    color: #000;
+    outline: none;
+    border: 0;
+}
+
+.main-search-icon {
+    position: relative;
+    margin-left: 75%;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+
+.nav-links li{
+    display: inline-block;
+    margin-left: 3vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+
+.nav-links li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px 0;
+    position: relative;
+}
+
+
+.nav-links li a:hover{
+    color: #0B3D91;
+}
+
+
+.nav-links li .active{
+    color: #0B3D91;
+}
+
+
+.nav-links li a::after{
+    content: '';
+    background: #0B3D91;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+
+/* .search-icon{
+    width: 30px;
+    cursor: pointer;
+    padding-right: 1vw;
+} */
+
+
+.Profile-icon {
+    width: 35px;
+    cursor: pointer;
+    padding-right: 1vw;
+}
+
+
+
+/* Nasa TV */
+
+.NasaTv-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+}
+
+.NasaTv-pic {
+    width: 40vw;
+    height: auto;;
+}
+
+.NasaTv-item2 {
+    margin-left: 5vw;
+}
+
+.line-title {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    border-bottom: 5px #FFFFFF;
+}
+
+.calendar-icon {
+    margin-right: 1vw;
+}
+
+.NasaTv-Heading {
+    font-weight: 900;
+    font-size: 3em;
+    letter-spacing: 0.25vw;
+    text-transform: uppercase;
+}
+
+.NasaTv-SubHeading {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2em;
+    letter-spacing: 0.15vw;
+    text-transform: uppercase;
+}
+
+.NasaTv-Scheduletitle{
+    font-weight: 400;
+}
+
+.upcoming-container {
+    display: grid;
+    grid-template-columns: 20% auto;
+    align-items: center;
+}
+
+.span-upcoming {
+    font-weight: 400;
+    margin-left: 2vw;
+}
+
+/* NasaTv RWD */
+@media only screen and (max-width: 1100px) {
+    .upcoming-container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+/* NasaTv RWD */
+@media only screen and (max-width: 900px) {
+    .NasaTv-container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+.upcoming-day {
+    font-weight: 900;
+    letter-spacing: 0.15vw;
+    text-transform: uppercase;
+}
+
+.time{
+    font-weight: 700;
+}
+
+.ChannelName{
+    font-weight: 400;
+}
+
+.NasaTv-arrow {
+    margin-top: 2vh;
+    margin-left: 5px;
+    margin-right: 1vw;
+}
+
+.nasaTv-icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+
+/* Buttons */
+button {
+    position: relative;
+    width: 200px;
+    padding: 25px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: 400;
+    font-size: 1em;
+    border: 3px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #E1DDDF;
+}
+
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    background-position: left bottom;
+    transition: all .3s ease-out;
+  }
+
+
+
+  /* Back to top */
+.back-top {
+    position: fixed;
+    bottom: 20px;
+    left: 80%;
+    display: none;
+    padding: 75px;
+  }
+
+
+
+/* Footer */
+footer {
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.footer-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.footer-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.5em;
+    padding-top: 5%;
+}
+
+.public-media-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: 0 15% 0 15%;
+}
+
+.media-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 5% 10% 5% 10%;
+}
+
+.public-media-item {
+    cursor: pointer;
+    width: 75%;
+    height: 100%;
+}
+
+.contact-container {
+    justify-content: right;
+}
+
+.social-info-title {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.social-media-item {
+    width: 50px;
+    height: 50px;
+}
+
+.social-info-desc {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.contact-title {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.fa-envelope {
+    margin-right: 2%;
+}
+
+.contact-email {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+#input-email {
+    width: 50%;
+    height: 15%;
+    font-size: 18px;
+    background: #ffffff;
+    color: #000;
+    outline: none;
+}
+
+.footer-line{
+    padding-bottom: 20px;
+    border-bottom: 3px solid #f0f0f0;
+    opacity: .5;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer-nasa-logo {
+    padding-top: 10%;
+}
+
+.footer-container {
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    margin-top: 1%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+/* NasaUpTo */
+
+.NasaUpTo {
+    background: #000000;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.NasaUpToTitle {
+    margin-top: 3%;
+    color: #ffffff;
+    font-weight: Bold;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    opacity: 1;
+    text-align: center;
+}
+
+.NasaUpToText-sub {
+    font-weight: 800;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.NasaUpToSmallText {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 2em;
+    margin-bottom: 5%;
+}
+
+
+.NasaUpTo-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: stretch;
+    justify-content: left;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.NasaUpTo-item2{
+    margin-top: 10%;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* REVIEW THIS */
+.nasaupto-border {
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+/* NasaUpTo RWD */
+@media only screen and (max-width: 900px) {
+    .NasaUpTo-container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+
+/* Floating animation below*/
+.astronaut {
+    width: 75%;
+    height: auto;
+    animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+}
+
+
+@keyframes fadeInFromTop{
+    from{
+        opacity: 0;
+        transform: translate(-20px)
+    }
+    to {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes floating{
+    0%{
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+    25%{
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+    50%{
+        transform: translate(10%, 5%) rotate(360deg);
+    }
+    75%{
+        transform: translate(0%, 15%) rotate(360deg);
+    }
+    100%{
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+}
+
+
+
+/* STEM section */
+
+.stem-quiz {
+    position: relative;
+    margin-top: 25%;
+    margin-bottom: 10vh;
+}
+
+.stem-learning {
+    margin-left: 10%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.moon {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    /* transform: translate(15%); */
+}
+
+.stem-kid {
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    bottom: 0;
+}
+
+.quizbox-container {
+    padding: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(45px);
+    border-radius: 25px;
+}
+
+.quiztitle{
+    max-width: 55vw;
+    font-weight: 800;
+    font-size: 3em;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.quiztext{
+    max-width: 55vw;
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: 0.07em;
+}
+
+/* STEM Quiz RWD */
+@media only screen and (max-width: 1200px) {
+    .quizbox-container {
+        text-align: center;
+    }
+
+    .quiztitle{
+        text-align: center;
+    }
+
+    .stem-kid {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+    }
+}
+
+
+/* Data & Stats */
+
+.DataStats-sec {
+    position: relative;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    width: 100vw;
+}
+
+.datastats-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: auto;
+}
+
+.StatsTitle{
+    margin-top: 15vh;
+    font-weight: 800;
+    font-size: 3em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.datastats-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 15vh;
+    column-gap: 10vw;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.stats-item-img {
+    align-items: center;
+}
+
+.stats-item-title {
+    text-align: center;
+    font-weight: 200;
+    font-size: 6em;
+}
+
+.stats-desc {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+}
